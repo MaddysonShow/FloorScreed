@@ -16,22 +16,22 @@
     <div class="uk-container">
       <header>
         <div class="uk-grid uk-grid-small uk-child-width-auto uk-flex-middle uk-flex-right" uk-grid>
-          <div><span class="worktime">Без выходных с 9.00 до 22.00</span></div>
-          <div><a href="tel:89257005060" class="phonenumber">8 (925) 700 50 60</a></div>
+          <div><span class="worktime uk-visible@m">Без выходных с 9.00 до 22.00</span></div>
+          <div><a href="tel:89257005060" class="phonenumber uk-visible@s">8 (925) 700 50 60</a></div>
           <div><a href="#modal-call" class="uk-button uk-button-orange" uk-toggle>Заказать звонок</a></div>
         </div>
       </header>
       <div class="info uk-text-center">
-          <nav class="uk-navbar-container uk-navbar-transparent uk-text-left" uk-navbar>
+          <nav class="uk-navbar-container uk-navbar-transparent uk-text-left uk-visible@s" uk-navbar>
             <div class="uk-navbar-center">
                 <ul class="uk-navbar-nav">
-                    <li><a href="#">Процесс работ</a></li>
-                    <li><a href="#">Достоинства</a></li>
-                    <li><a href="#">Виды работ</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Результаты</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#sequence-work" uk-scroll>Процесс работ</a></li>
+                    <li><a href="#dignity" uk-scroll>Достоинства</a></li>
+                    <li><a href="#premises" uk-scroll>Виды работ</a></li>
+                    <li><a href="#ourprices" uk-scroll>Цены</a></li>
+                    <li><a href="#argument" uk-scroll>О компании</a></li>
+                    <li><a href="#results" uk-scroll>Результаты</a></li>
+                    <li><a href="#contacts" uk-scroll>Контакты</a></li>
                 </ul>
             </div>
           </nav>
@@ -47,23 +47,33 @@
                 <button type="submit" class="uk-button uk-button-tea uk-width-1-1">Отправить заявку</button>
               </div>
             </div>
+            <div class="circle uk-flex uk-flex-middle uk-visible@m"><span>Выезд замерщика <strong>бесплатный</strong></span></div>
           </form>
       </div>
     </div>
-    <div class="uk-container">
+    <div class="uk-container uk-visible@m">
       <div class="advantages uk-grid uk-grid-small uk-child-width-1-3 uk-flex-center uk-flex-middle uk-text-center" uk-grid>
-        <div><span>2 года гарантия на пол</span></div>
-        <div><span>Стоимость от 420 руб за кв. м.</span></div>
-        <div><span>Работаем по договору</span></div>
+        <div>
+          <img src="img/advantages/advantages-1.png" alt="2 года гарантия на пол" width="28" height="34" /><span>2 года гарантия на пол</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div>
+        </div>
+        <div>
+          <img src="img/advantages/advantages-2.png" alt="Стоимость от 420 руб за кв. м." width="33" height="3" /><span>Стоимость от 420 руб за кв. м.</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div>
+        </div>
+        <div>
+          <img src="img/advantages/advantages-3.png" alt="Работаем по договору" width="26" height="34" /><span>Работаем по договору</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="sequence-work">
+  <div class="sequence-work" id="sequence-work">
     <div class="uk-container uk-position-relative">
         <h2>Последовательность работ</h2>
         <p>415 кв.м. — производительность одной бригады за рабочий день</p>
-        <div class="sequence uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+        <div class="sequence uk-grid uk-grid-small uk-child-width-1-2@s" uk-grid>
           <div>
             <div class="uk-grid uk-grid-collapse" uk-grid>
               <div class="uk-width-auto">
@@ -118,16 +128,27 @@
             <a href="#modal-call" class="uk-button uk-button-tea uk-margin-small-top" uk-toggle>Оставить заявку</a>
           </div>
         </div>
-        <div class="flybed">
-    
+        <div class="flybed uk-visible@s">
+          <div class="one uk-inline">
+              <button class="uk-button uk-button-default" type="button"></button>
+              <div uk-dropdown="mode: click;pos: bottom-center">Описание для текущего поинта</div>
+          </div>
+          <div class="two uk-inline">
+              <button class="uk-button uk-button-default" type="button"></button>
+              <div uk-dropdown="mode: click;pos: bottom-center">Описание для текущего поинта</div>
+          </div>
+          <div class="three uk-inline">
+              <button class="uk-button uk-button-default" type="button"></button>
+              <div uk-dropdown="mode: click;pos: bottom-center">Описание для текущего поинта</div>
+          </div>
         </div>
     </div>
   </div>
 
-  <div class="dignity">
+  <div class="dignity" id="dignity">
     <div class="uk-container">
       <h2>Достоинства полусухой стяжки пола</h2>
-      <div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@s uk-margin-large" uk-grid>
+      <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-large" uk-grid>
         <div>
           <div class="uk-grid uk-grid-collapse" uk-grid>
             <div class="image">
@@ -210,13 +231,14 @@
           <button type="submit" class="uk-button uk-button-tea uk-width-1-1">Отправить заявку</button>
         </div>
       </div>
+      <div class="circle uk-flex uk-flex-middle uk-visible@s"><span>Возможно, специальное <strong>предложение</strong></span></div>
     </form>
   </div>
 
-  <div class="premises uk-container">
+  <div class="premises uk-container" id="premises">
     <h2>В каких помещениях<br/>возможна полусухая стяжка пола</h2>
     <p>Мы делаем стяжку пола в квартирах, офисах, парковках - в любых помещениях и на любых этажах</p>
-    <div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@s uk-margin-medium-top uk-margin-large-bottom" uk-grid>
+    <div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@m uk-margin-medium-top uk-margin-large-bottom" uk-grid>
       <div>
         <div class="wrapper">
           <a href="#modal-call" class="image" uk-toggle>
@@ -281,7 +303,7 @@
     <br/>
   </div>
 
-  <div class="ourprices uk-overflow-hidden">
+  <div class="ourprices uk-overflow-hidden" id="ourprices">
     <div class="uk-container uk-position-relative">
       <h2>Наши цены на полусухую стяжку пола с учетом работы</h2>
       <table class="uk-table uk-table-middle custom-table uk-text-center uk-margin-medium-top">
@@ -331,27 +353,11 @@
     </div>
   </div>
 
-
-  <!--Этот быдлокод надо будет убрать-->
-  <div class="uk-container uk-position-relative">
-    
-    <form class="form_type-2">
-        <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-flex-middle" uk-grid>
-          <div>
-            <input type="text" name="ourprices" class="uk-margin-small-bottom" placeholder="Ваше имя" />
-            <input type="text" name="ourprices" class="uk-margin-bottom" placeholder="Номер телефона" />
-            <button class="uk-button uk-button-default">Получить скидку</button>
-          </div>
-          <div class="text uk-text-center"><span>500₽</span>Скидка на что-то</div>
-        </div>
-      </form>
-  </div>
-
-  <div class="argument">
+  <div class="argument" id="argument">
     <div class="uk-container">
       <h2 class="uk-margin-remove-bottom">Железные аргументы выбрать нас</h2>
       <p class="uk-margin-remove-top">и рекомендовать своим друзьям и партнёрам</p>
-      <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-4@m uk-text-center uk-margin-medium-top" uk-grid>
+      <div class="arguments uk-grid uk-grid-small uk-child-width-1-2 uk-child-width-1-4@m uk-text-center uk-margin-medium-top" uk-grid>
         <div>
           <img src="img/argument/argument-1.png" alt="100% гарантия качества" width="110" height="110" />
           <strong class="uk-display-block">100% гарантия качества</strong>
@@ -437,15 +443,21 @@
     </div>
 
     <div class="uk-container">
-      <div class="advantages small uk-grid uk-grid-small uk-child-width-1-3 uk-flex-center uk-flex-middle uk-text-center" uk-grid>
-        <div><span>2 года гарантия на пол</span></div>
-        <div><span>Стоимость от 420 руб за кв. м.</span></div>
-        <div><span>Работаем по договору</span></div>
+      <div class="advantages small uk-visible@m uk-grid uk-grid-small uk-child-width-1-3 uk-flex-center uk-flex-middle uk-text-center" uk-grid>
+        <div>
+          <img src="img/advantages/advantages-1.png" alt="2 года гарантия на пол" width="28" height="34" /><span>2 года гарантия на пол</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div></div>
+        <div>
+          <img src="img/advantages/advantages-2.png" alt="Стоимость от 420 руб за кв. м." width="33" height="3" /><span>Стоимость от 420 руб за кв. м.</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div></div>
+        <div>
+          <img src="img/advantages/advantages-3.png" alt="Работаем по договору" width="26" height="34" /><span>Работаем по договору</span>
+          <div class="uk-dropdown" uk-dropdown="mode: click;pos: bottom-center;offset:14">Описание для текущего поинта</div></div>
       </div>
     </div>
   </div>
 
-  <div class="results uk-container">
+  <div class="results uk-container" id="results">
     <h2 class="uk-margin-remove-bottom uk-text-center">Результаты нашей работы</h2>
     <p class="uk-margin-remove-top uk-text-center uk-margin-small-bottom">ровный пол и довольные клиенты</p>
     <div class="uk-clearfix"></div>
@@ -493,7 +505,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -541,7 +553,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -589,7 +601,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -637,7 +649,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -685,7 +697,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -733,7 +745,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-auto"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -742,7 +754,7 @@
     <a href="#" class="showmore uk-button uk-button-white uk-width-1-1 uk-margin-medium-top">Показать еще</a>
   </div>
 
-  <footer class="uk-grid uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+  <footer class="uk-grid uk-grid-collapse uk-child-width-1-2@s" id="contacts" uk-grid>
     <div class="wrapper">
       <div class="info">
         <span class="title">Контакты</span>
@@ -755,7 +767,7 @@
           <div>
             <img src="img/footer/icon-2.png" alt="" width="55" height="55" />
             <p class="uk-margin-small-right">+7 (925) 700-50-60</p>
-            <a href="#modal-call" class="uk-button uk-button-grey">Заказать звонок</a>
+            <a href="#modal-call" class="uk-button uk-button-grey uk-visible@m" uk-toggle>Заказать звонок</a>
           </div>
           <div>
             <img src="img/footer/icon-3.png" alt="" width="55" height="55" />
@@ -769,8 +781,8 @@
         </div>
       </div>
     </div>
-    <div>
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae84cad14aadcb748725d4415c06fccd2e68b1daa96c407c54b29cf011dd95d95&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+    <div class="uk-visible@s">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae84cad14aadcb748725d4415c06fccd2e68b1daa96c407c54b29cf011dd95d95&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
   </footer>
 
@@ -782,6 +794,7 @@
 
   <div id="modal-call" uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-text-center">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
       <form>
         <span class="uk-modal-title">Оставить заявку</span>
         <p class="uk-margin-small-top">Укажите ваши контактные данные - мастер перезвонить вам в течение 5 минут</p>
@@ -793,5 +806,21 @@
       </form>
     </div>
   </div>
+
+  
+  <!--Этот быдлокод надо будет убрать-->
+  <div class="uk-container uk-position-relative uk-hidden">
+    
+      <form class="form_type-2">
+          <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-flex-middle" uk-grid>
+            <div>
+              <input type="text" name="ourprices" class="uk-margin-small-bottom" placeholder="Ваше имя" />
+              <input type="text" name="ourprices" class="uk-margin-bottom" placeholder="Номер телефона" />
+              <button class="uk-button uk-button-default">Получить скидку</button>
+            </div>
+            <div class="text uk-text-center"><span>500₽</span>Скидка на что-то</div>
+          </div>
+        </form>
+    </div>
 </body>
 </html>
