@@ -505,7 +505,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -553,7 +553,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -601,7 +601,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -649,7 +649,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -697,7 +697,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -745,7 +745,7 @@
             <a href="#" class="uk-link-blue">Отзыв клиента</a>
             <div class="uk-grid uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-expand price">Стоимость работы ~ 15 000₽</div>
-              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse">Заказать так же</a></div>
+              <div class="uk-width-1-1 uk-width-auto@m"><a href="#modal-call" title="Заказать так же" class="uk-button uk-button-tea-inverse" uk-toggle>Заказать так же</a></div>
             </div>
           </div>
         </div>
@@ -786,12 +786,6 @@
     </div>
   </footer>
 
-  <div class="scripts uk-hidden">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
-      <script src="js/uikit-icons.min.js"></script>
-      <script src="js/all.js"></script>
-  </div>
-
   <div id="modal-call" uk-modal>
     <div class="uk-modal-dialog uk-modal-body uk-text-center">
       <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -807,20 +801,24 @@
     </div>
   </div>
 
-  
   <!--Этот быдлокод надо будет убрать-->
   <div class="uk-container uk-position-relative uk-hidden">
-    
-      <form class="form_type-2">
-          <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-flex-middle" uk-grid>
-            <div>
-              <input type="text" name="ourprices" class="uk-margin-small-bottom" placeholder="Ваше имя" />
-              <input type="text" name="ourprices" class="uk-margin-bottom" placeholder="Номер телефона" />
-              <button class="uk-button uk-button-default">Получить скидку</button>
-            </div>
-            <div class="text uk-text-center"><span>500₽</span>Скидка на что-то</div>
+    <form class="form_type-2">
+        <div class="uk-grid uk-grid-small uk-child-width-1-2 uk-flex-middle" uk-grid>
+          <div>
+            <input type="text" name="ourprices" class="uk-margin-small-bottom" placeholder="Ваше имя" />
+            <input type="text" name="ourprices" class="uk-margin-bottom" placeholder="Номер телефона" />
+            <button class="uk-button uk-button-default">Получить скидку</button>
           </div>
-        </form>
-    </div>
+          <div class="text uk-text-center"><span>500₽</span>Скидка на что-то</div>
+        </div>
+      </form>
+  </div>
+
+  <div class="scripts uk-hidden">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.2/js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
+      <script src="js/all.js"></script>
+  </div>
 </body>
 </html>
