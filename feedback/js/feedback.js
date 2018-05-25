@@ -119,12 +119,13 @@ mcf.done(function(conf) {
                           UIkit.notification('<h4 class="uk-margin-small-bottom">Готово!</h4><span>Форма успешно отправлена</span>', { status: 'success', pos: 'top-right', timeout: 5000});
                         });
 
-                        UIkit.modal('.uk-modal.uk-open').hide();
-                        UIkit.modal('#modal-success').show();
+                        if ($('.uk-modal.uk-open').length)
+                            UIkit.modal('.uk-modal.uk-open').hide();
+                            UIkit.modal('#modal-success').show();
 
                         setInterval(function(){
                             UIkit.modal('#modal-success').hide();
-                        }, 9000);
+                        }, 8000);
                       }
 
                   }

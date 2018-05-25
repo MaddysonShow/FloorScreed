@@ -37,14 +37,14 @@
           </nav>
           <h1>Полусухая стяжка пола</h1>
           <p class="uk-margin-remove-top uk-margin-medium-bottom">по<i class="deutsch"></i>немецкой технологии</p>
-          <form class="form_type-1">
+          <form class="form_type-1" action="" method="get" name="form-2">
             <legend>Укажите ваш контактный телефон - мастер перезвонит вам в течении 5 минут</legend>
             <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-margin-top" uk-grid>
               <div>
-                <input class="uk-input" name="grayhead_phone" placeholder="+7 927 123-45-67" />
+                <input class="uk-input" name="basic_phone" placeholder="+7 927 123-45-67" />
               </div>
               <div>
-                <button type="submit" class="uk-button uk-button-tea uk-width-1-1">Отправить заявку</button>
+                <button type="submit" class="uk-button uk-button-tea uk-width-1-1 feedback">Отправить заявку</button>
               </div>
             </div>
             <div class="circle uk-flex uk-flex-middle uk-visible@m"><span>Выезд замерщика <strong>бесплатный</strong></span></div>
@@ -221,14 +221,14 @@
 
   <div class="accuracy uk-container uk-text-left uk-margin-large-bottom">
     <h2>Узнайте точную стоимость стяжки пола своего объекта</h2>
-    <form class="form_type-1 uk-margin-medium-top">
+    <form class="form_type-1 uk-margin-medium-top" action="" method="get" name="form-2">
       <legend>Укажите ваш контактный телефон - мастер перезвонит вам в течении 5 минут</legend>
       <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-margin-top" uk-grid>
         <div>
-          <input class="uk-input" name="accuracy_phone" placeholder="+7 927 123-45-67" />
+          <input class="uk-input" name="basic_phone" placeholder="+7 927 123-45-67" />
         </div>
         <div>
-          <button type="submit" class="uk-button uk-button-tea uk-width-1-1">Отправить заявку</button>
+          <button type="submit" class="uk-button uk-button-tea uk-width-1-1 feedback">Отправить заявку</button>
         </div>
       </div>
       <div class="circle uk-flex uk-flex-middle uk-visible@s"><span>Возможно, специальное <strong>предложение</strong></span></div>
@@ -429,14 +429,14 @@
     </div>
     <div class="accuracy uk-container uk-text-left">
       <h2>Узнайте точную стоимость стяжки пола своего объекта</h2>
-      <form class="form_type-1 uk-margin-medium-top">
+      <form class="form_type-1 uk-margin-medium-top" action="" method="get" name="form-2">
         <legend>Укажите ваш контактный телефон - мастер перезвонит вам в течении 5 минут</legend>
         <div class="uk-grid uk-grid-small uk-child-width-1-2@s uk-margin-top" uk-grid>
           <div>
-            <input class="uk-input" name="accuracy_phone" placeholder="+7 927 123-45-67" />
+            <input class="uk-input" name="basic_phone" placeholder="+7 927 123-45-67" />
           </div>
           <div>
-            <button type="submit" class="uk-button uk-button-tea uk-width-1-1">Отправить заявку</button>
+            <button type="submit" class="uk-button uk-button-tea uk-width-1-1 feedback">Отправить заявку</button>
           </div>
         </div>
       </form>
@@ -776,7 +776,7 @@
         </div>
         <div class="copyright uk-margin-medium-top">
           <div class="uk-display-block">© 2018 Все права защищены.</div>
-          <a href="marweb.info" class="uk-margin-right">Разработка — <span>Marsweb</span></a>
+          <a href="http://marweb.info" class="uk-margin-right">Разработка — <span>Marsweb</span></a>
           <a href="#">Помощь в запуске <span>Кружок</span></a>
         </div>
       </div>
@@ -793,10 +793,11 @@
         <span class="uk-modal-title">Оставить заявку</span>
         <p class="uk-margin-small-top">Укажите ваши контактные данные - мастер перезвонить вам в течение 5 минут</p>
         <div class="uk-grid uk-grid-small uk-child-width-1-2@s" uk-grid>
-          <div><input class="uk-input" placeholder="Ваше имя" name="modal_name"/></div>
-          <div><input class="uk-input" placeholder="+7 927 123-45-67" name="modal_phone"/></div>
+          <div><input class="uk-input" type="text" placeholder="Ваше имя" name="modalname"/></div>
+          <div><input class="uk-input" type="text" placeholder="+7 927 123-45-67" name="modalphone"/></div>
           <div class="uk-width-1-1"><input class="uk-width-1-1 uk-button uk-button-tea feedback" type="button" value="Отправить заявку" /></div>
         </div>
+        <input class="uk-hidden" type="text" name="modalinfo" />
       </form>
     </div>
   </div>
