@@ -12,6 +12,8 @@ a:hover,a:focus{-webkit-transition:.3s ease-in-out;transition:.3s ease-in-out}
 b,strong{font-family:'Cirle Bold';font-weight:400}
 sup{font-size:11px}
 
+
+
 .grayhead header{padding:14px 28px;background:#fff;font-size:18px;color:#696969}
 .grayhead header span{display:inline-block}
 .grayhead header .worktime{margin-top:4px}
@@ -238,7 +240,11 @@ table.custom-table tbody td{font-size:14px}
 .form_type-2 .text span{font-size:87px;line-height:80px;display:block}
 
 /* Inputs */
-.uk-input{height:50px;border-radius:2px}
+.uk-input{height:50px;border-radius:2px; width: 64%}
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Buttons */
 .uk-button{font:18px/50px 'Cirle Regular',sans-serif;text-transform:none;border-radius:2px}
